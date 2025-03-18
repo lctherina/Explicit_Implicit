@@ -20,13 +20,32 @@ Use console.log() to clearly show the before-and-after type conversions.
 
 
 let result = "5" - 2;
-console.log("The result is: " + result);
+console.log("The result is: " + Number(result));
+console.log(typeof result);
 
 let isValid = Boolean("false");
 if (isValid) {
     console.log("This is valid!");
 }
+console.log(typeof isValid);
 
 let age = "25";
-let totalAge = age + 5;
+let totalAge = (Number(age) + 5);
 console.log("Total Age: " + totalAge);
+
+let num = 1987;
+let str = String(num);
+console.log(str);
+console.log(typeof str);
+
+let text = ""
+if (text){
+  console.log("This is falsy");
+}
+
+
+
+
+
+
+
